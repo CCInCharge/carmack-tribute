@@ -2,11 +2,7 @@
 <html>
 <head>
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-3.1.1.js">
-    $("#name").mouseover(function () {$("#name").addClass("green")});
-    $("#name").mouseleave(function (){$("#name").removeClass("green")});
-  </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <style>
       #name {
         font-weight: bold;
@@ -24,6 +20,11 @@
 </head>
 
 <body>
+    <script src="https://code.jquery.com/jquery-3.1.1.js">
+      $(document).ready(function(){$("#name").mouseover(function () {$("#name").addClass("green")});
+      $("#name").mouseleave(function (){$("#name").removeClass("green")});
+        });
+    </script>
   <div class="container-fluid">
     <h1 id="name" class="text-center">John Carmack</h1>
     <h2 id="description" class="text-center">Programmer, VR Developer, Aerospace Engineer (?!)</h2>
