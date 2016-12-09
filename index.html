@@ -17,6 +17,12 @@
       color: green;
     }
     </style>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+        $(document).ready(function(){$("#name").mouseover(function () {$("#name").addClass("green")});
+        $("#name").mouseleave(function (){$("#name").removeClass("green")});
+            });
+    </script>
 </head>
 
 <body>
